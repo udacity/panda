@@ -7,23 +7,20 @@
 # url: blog.youdaxue.com
 
 # Localhost
-#url: http://127.0.0.1:4000
+url: http://127.0.0.1:4000
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Udacity China Blogs
+  name: 优达学城（Udacity）| 官方博客
   # Little description about your site
-  description:
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and
-  # in your feed.xml site description.
-  meta_description: > #
-   Harmony is a free responsive jekyll theme by Gayan Virajith
-   and Maheshika Lakmali.
+  description: > #
+   优达学城（Udacity）官方资讯和技术分享，掌握全球最前沿技术
+  keywords: >
+    优达学城,机器学习,数据分析,iOS开发,Android开发,安卓开发,编程教程,技术教程,公开课,在线课程,Udacity,MOOC，博客
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
     name: Udacity China
-    email: support@youdaxue.com
+    email: info@youdaxue.com
     url: https://cn.udacity.com
 
   # Google Analytics key, leave blank to ignore

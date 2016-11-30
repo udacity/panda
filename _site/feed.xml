@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Nov 2016 12:05:39 +0800</pubDate>
-    <lastBuildDate>Mon, 21 Nov 2016 12:05:39 +0800</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <title>优达学城（Udacity）| 官方博客</title>
+    <description>优达学城（Udacity）官方资讯和技术分享，掌握全球最前沿技术
+</description>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 30 Nov 2016 10:22:51 +0800</pubDate>
+    <lastBuildDate>Wed, 30 Nov 2016 10:22:51 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>What is Jekyll!</title>
@@ -22,13 +23,15 @@
 
 </description>
         <pubDate>Mon, 21 Nov 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/blog/jekyll/2016/11/21/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/jekyll/2016/11/21/welcome-to-jekyll/</guid>
+        <link>http://127.0.0.1:4000/front-end/2016/11/21/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/front-end/2016/11/21/welcome-to-jekyll/</guid>
         
-        
-        <category>blog</category>
+        <category>scripts</category>
         
         <category>jekyll</category>
+        
+        
+        <category>front-end</category>
         
       </item>
     

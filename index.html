@@ -1,39 +1,54 @@
 ---
 layout: default
 ---
-<div id="home" class="page-content wc-container">
-	<div class="posts">
-  		{% for post in site.posts limit:10 %}
-  			<div class="post">
-    			<h3 class="post-title">
-			      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-			        {{ post.title }}
-			      </a>
-    			</h3>
-
-          <p class="post-meta">
-            {% if (post.categories.size > 0 %}
-            <span class="categories">
-            {{ post.categories | array_to_sentence_string }}
-            </span> |
-            {% endif %}
-            <span class="post-date">
-            {{ post.date | date: "%b %-d, %Y" }} 
-            </span>
-          </p>          
-    			    			
-  				<p>
-	  				{{ post.excerpt }}	
-  				</p>
-  				<p>
-  					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
-  						Read More
-					</a>
-  				</p>
-  			</div>
-  		{% endfor %}
-	</div>
-	<div class="post-footer">
-		<div class="column-full"><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></div>
-	</div>
+<div class="hero">
+  <h1 class="title">优达学城（Udacity）官方博客</h1>
+  <a title="subscribe Udacity China blog" href="/feed.xml" class="rss-link">
+    <i class="rss wc-img-replace">icon</i>
+    <span>SUBSCRIBE</span>
+  </a>
+</div>
+<div id="home">
+  <div class="page-content wc-container">
+    <div class="posts">
+        {% for post in site.posts limit:10 %}
+          <div class="post">
+            <h3 class="post-title">
+              <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <p class="post-meta">
+              {% if (post.tags.size > 0 %}
+              <span class="tags">
+              {{ post.tags | join: ',' }}
+              </span> |
+              {% endif %}
+              <span class="post-date">
+              {{ post.date | date: "%b %-d, %Y" }}
+              </span>
+              {% if post.author %}
+                {% for author in post.author %}
+                  <span>By </span>
+                  {% if author.link %}
+                    <a href="{{author.link}}" target="_blank">{{author.name}}</a>
+                  {% else %}
+                    <span>By {{ author.name }}</span>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </p>
+            <p>
+              {{ post.excerpt }}
+            </p>
+            <p>
+              <a class="decoration" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
+                点击阅读
+            </a>
+            </p>
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+  {% include categories.html %}
 </div>

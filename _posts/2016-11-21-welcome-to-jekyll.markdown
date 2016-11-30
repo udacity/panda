@@ -2,9 +2,14 @@
 layout: post
 title:  "What is Jekyll!"
 description: Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
-categories:
-- blog
+author: 
+ - name: Xeodou
+   link: https://github.com/xeodou
+tags:
+- scripts
 - jekyll
+categories:
+- Front-end
 ---
 
 [Jekyll][jekyll] is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. Here is a little quote from the official website:

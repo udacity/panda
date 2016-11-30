@@ -9,9 +9,6 @@
   - [Header navigation links](#header-navigation-links)
   - [Footer links](#footer-links)
   - [Copyrights/Disclaimer statements](#copyrightsdisclaimer-statements)
-- [Screenshots](#screenshots)
-- [Feedback/Bugs/Suggestions](#feedbackbugssuggestions)
-- [Version history](#version-history)
 - [License](#license)
 
 ## About jekyll 
@@ -26,7 +23,7 @@
 4. Run `bundle install`
 5. Edit the _config.yml on root directory. Change `url` property to to 
 `http://127.0.0.1:4000` since you are going to run on localhost.
-6. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
+6. Run the jekyll server by having: `bundle exec jekyll serve`   
 
 Try to locate your browser at [http://localhost:4000](http://localhost:4000).
 
