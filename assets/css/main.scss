@@ -137,13 +137,18 @@ img {
   height: auto;
 }
 
-
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
   height: 0;
+}
+
+sup {
+  font-size: smaller;
+  vertical-align: super;
+  text-decoration: underline;
 }
 
 /* bold text */
