@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Web 设计中的 break point"
+title:  "响应式网页设计中的 Break Point"
 author: 
  - name: Xeodou
    link: https://github.com/xeodou
@@ -14,6 +14,8 @@ categories:
 
 由于移动设备（手机，平板电脑等）的流行，越来越多的网站开始使用响应式设计来设计网站。其核心归结为一句话就是，在不同设备上自动适配不同的内容（*如下图所示*）。而我们为了让网站样式能够支持响应式设计，其中最关键的因素就是 CSS 中的 **[media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)**，media queries 允许我们定义在不同内容和尺寸的设备上的样式。
 ![图片来源：维基百科](https://cloud.githubusercontent.com/assets/914595/21479234/86246a54-cb8d-11e6-99be-fc0160fa31ea.png)
+
+*最先发布在 https://xeodou.me/2016/12/27/break-point-in-responsive-web-design/*
 
 #### 如何使用 Media Queries
 上面我们说到 media queries 可以帮助我们定义不同尺寸设备上的内容显示，那么我们只需要在我们现有的样式中增加针对特定内容在特定设备或者尺寸的样式即可，例如：
